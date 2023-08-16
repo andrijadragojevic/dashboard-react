@@ -332,6 +332,17 @@ export const menu = [
       },
     ],
   };
+
+export const pieChartBoxLeads = {
+  title: "Leads by Source",
+  chartData: [
+    { name: 'Windows', value: 400 },
+    { name: 'Android', value: 300 },
+    { name: 'Mac', value: 100 },
+    { name: 'Linux', value: 200 },
+  ],
+  chartColors: ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'],
+}
   
   export const userRows = [
     {
