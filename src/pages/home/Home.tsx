@@ -2,8 +2,9 @@ import BarChartBox from "../../components/barChartBox/BarChartBox";
 import ChartBox from "../../components/chartBox/ChartBox";
 import TopDeals from "../../components/topDeals/TopDeals";
 import PieChartBox from "../../components/pieChartBox/PieChartBox";
-import { barChartBoxRevenue, barChartBoxVisit, chartBoxConversion, chartBoxProduct, chartBoxRevenue, chartBoxUser, pieChartBoxLeads } from "../../data";
+import { barChartBoxRevenue, barChartBoxVisit, bigChartBoxRevenue, chartBoxConversion, chartBoxProduct, chartBoxRevenue, chartBoxUser, pieChartBoxLeads } from "../../data";
 import "./home.scss"
+import BigChartBox from "../../components/bigChartBox/BigChartBox";
 
 const Home = () => {
   return (
@@ -14,7 +15,7 @@ const Home = () => {
       <div className="box box4"><PieChartBox {...pieChartBoxLeads} /></div>
       <div className="box box5"><ChartBox {...chartBoxRevenue} /></div>
       <div className="box box6"><ChartBox {...chartBoxConversion} /></div>
-      <div className="box box7">Box 7</div>
+      <div className="box box7"><BigChartBox {...bigChartBoxRevenue} /></div>
       <div className="box box8"><BarChartBox {...barChartBoxVisit} /></div>
       <div className="box box9"><BarChartBox {...barChartBoxRevenue} /></div>
     </div>
